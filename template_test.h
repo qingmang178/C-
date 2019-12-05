@@ -14,6 +14,18 @@ void Swap(T& x, T& y)
 
 }
 
+template<class T>
+T maxElement(T a[], int size)
+{
+	T tmpMax = a[0];
+	for (int i = 1; i < size; ++i)
+	{
+		if (tmpMax < a[i])
+			tmpMax = a[i];
+	}
+	return tmpMax;
+}
+
 
 
 
