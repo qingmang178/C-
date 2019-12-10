@@ -26,5 +26,8 @@
     <ClInclude Include="template_test.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="leetcode3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
