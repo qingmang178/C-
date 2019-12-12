@@ -1,13 +1,15 @@
 #include<iostream>
-#include "iostream_test.h"
-#include"template_test.h"
+#include"leetcode7.h"
 using namespace std;
 
 
 int main()
 {
-	int n = 1, m = 2;
-	Swap(n, m);
-	cout << n << m << endl;
+	int a = 1230;
+	int answer;
+	Solution solu;
+	answer=solu.reverse(a);
+	cout << answer;
+
 }
 
