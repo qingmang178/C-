@@ -1,15 +1,13 @@
 #include<iostream>
-#include"leetcode7.h"
+#include"leetcode14.h"
 using namespace std;
 
 
 int main()
 {
-	int a = 1230;
-	int answer;
+	vector<string> a = { "flower","flow","flight" };
 	Solution solu;
-	answer=solu.reverse(a);
-	cout << answer;
-
+	string b=solu.longestCommonPrefix(a);
+	cout << b;
 }
 
