@@ -1,13 +1,13 @@
 #include<iostream>
-#include"leetcode14.h"
+#include"leetcode20.h"
 using namespace std;
 
 
 int main()
 {
-	vector<string> a = { "flower","flow","flight" };
+	string s = "[])";
 	Solution solu;
-	string b=solu.longestCommonPrefix(a);
-	cout << b;
+	bool a = solu.isValid(s);
+	cout << a;
 }
 
