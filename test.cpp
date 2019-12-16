@@ -1,14 +1,14 @@
 #include<iostream>
-#include"leetcode27.h"
+#include"leetcode28.h"
 using namespace std;
 
 
 int main()
 {
-	vector<int> a = { 3, 2, 2, 3 };
+	string s1 = "hello";
+	string s2 = "ll";
 	Solution solu;
-	int b = solu.removeElement(a, 3);
-	cout << b;
-
+	int a = solu.strStr(s1, s2);
+	cout << a;
 }
 
