@@ -1,13 +1,14 @@
 #include<iostream>
-#include"leetcode20.h"
+#include"leetcode27.h"
 using namespace std;
 
 
 int main()
 {
-	string s = "[])";
+	vector<int> a = { 3, 2, 2, 3 };
 	Solution solu;
-	bool a = solu.isValid(s);
-	cout << a;
+	int b = solu.removeElement(a, 3);
+	cout << b;
+
 }
 
