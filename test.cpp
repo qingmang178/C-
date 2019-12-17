@@ -1,14 +1,16 @@
 #include<iostream>
-#include"leetcode28.h"
+#include"leetcode35.h"
 using namespace std;
 
 
 int main()
 {
-	string s1 = "hello";
-	string s2 = "ll";
+	vector<int> a = { 1,3,5,6 };
+	int t =0;
 	Solution solu;
-	int a = solu.strStr(s1, s2);
-	cout << a;
+	int result = solu.searchInsert(a, t);
+	cout << result;
+
+
 }
 
