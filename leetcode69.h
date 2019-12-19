@@ -15,6 +15,8 @@ public:
 	int mySqrt(int x) {
 		long long left = 0;
 		long long right = x / 2;
+		if (x <= 1)
+			return x;
 		while (left < right)
 		{
 			long long mid = left + (right - left+1) / 2;
