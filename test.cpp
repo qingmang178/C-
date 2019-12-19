@@ -1,13 +1,13 @@
 #include<iostream>
-#include"leetcode53.h"
+#include"leetcode58.h"
 using namespace std;
 
 
 int main()
 {
-	vector<int> a = { -2,1,-3,4,-1,2,1,-5,4 };
+	string s = "hello World";
 	Solution solu;
-	int t = solu.maxSubArray(a);
+	int t = solu.lengthOfLastWord(s);
 	cout << t;
 
 
