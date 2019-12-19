@@ -142,6 +142,7 @@
     <ClInclude Include="leetcode58.h" />
     <ClInclude Include="leetcode7.h" />
     <ClInclude Include="leetcode9.h" />
+    <ClInclude Include="leetocde66.h" />
     <ClInclude Include="template_test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
