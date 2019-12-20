@@ -128,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="iostream_test.h" />
+    <ClInclude Include="leetcode100.h" />
     <ClInclude Include="leetcode13.h" />
     <ClInclude Include="leetcode14.h" />
     <ClInclude Include="leetcode20.h" />
