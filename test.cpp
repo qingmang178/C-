@@ -1,13 +1,13 @@
 #include<iostream>
-#include"leetcode69.h"
+#include"leetcode70.h"
 using namespace std;
 
 
 int main()
 {
-	int a = 8;
+	int a = 45;
 	Solution solu;
-	int b = solu.mySqrt(a);
+	int b = solu.climbStairs(a);
 	cout << b;
 
 }
