@@ -8,11 +8,27 @@
 #include<algorithm>
 using namespace std;
 
-int test1();
-int test2();
-int test3();
+int test_binary();
 
-int test1()
+struct Student {
+	char name[20];
+	int score;
+};
+
+
+
+	int test_binary()
+	{
+		Student s;
+		ofstream Outfile("students.dat", ios::out | ios::binary);
+		while (cin >> s.name >> s.score)
+			Outfile.write((char*)&s, sizeof(s));
+		Outfile.close();
+		return 0;
+	}
+
+
+/*int test1()
 {
 	double f; int n;
 	freopen("t.txt", "r", stdin);
@@ -51,6 +67,6 @@ int test3()
 	return 0;
 }
 
-
+*/
 
 #endif
