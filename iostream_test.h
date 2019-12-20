@@ -17,7 +17,7 @@ struct Student {
 
 
 
-	int test_binary()
+   int test_binary()
 	{
 		Student s;
 		ofstream Outfile("students.dat", ios::out | ios::binary);
@@ -26,7 +26,45 @@ struct Student {
 		Outfile.close();
 		return 0;
 	}
+   int test_binary1()
+   {
+	   //将二进制文件读取输出到屏幕上
+	   Student s;
+	   ifstream inFile("students.dat", ios::in | ios::binary);
+	   if (!inFile)
+	   {
+		   cout << "error" << endl;
+		   return 0;
+	   }
+	   while (inFile.read((char*) & s, sizeof(s)))
+	   {
+		   int readedBytes = inFile.gcount();
+		   cout << s.name << " " << s.score << endl;
+	   }
+	   inFile.close();
+	   return 0;
 
+   }
+   int test_binary2()
+   {
+	   Student s;
+	   fstream iofile("students.dat", ios::in | ios::out | ios::binary);
+	   if (!iofile)
+	   {
+		   cout << "error";
+		   return 0;
+	   }
+	   iofile.seekp(2 * sizeof(s), ios::beg);
+	   strcpy(s.name, "zhaobin");// 修改的方法，重点
+	   s.score = 50;
+	   //iofile.write("Mikl", strlen("Mike") + 1);
+	   iofile.write((const char*)(&s), sizeof(s));
+	   iofile.seekg(0, ios::beg);
+	   while (iofile.read((char*)&s, sizeof(s)))
+		   cout << s.name << " " << s.score << endl;
+	   iofile.close();
+	   return 0;
+   }
 
 /*int test1()
 {

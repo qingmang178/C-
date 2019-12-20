@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-   test_binary();
+   test_binary2();
 	
 
 }
