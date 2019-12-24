@@ -1,12 +1,13 @@
 #include<iostream>
-#include"iostream_test.h"
+#include"leetcode118.h"
 using namespace std;
 
 
 int main()
 {
-   test_binary2();
-	
+	int c = 5;
+	Solution solu;
+	solu.generate(c);
 
 }
 
