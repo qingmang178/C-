@@ -1,5 +1,5 @@
 #include<iostream>
-#include"leetcode118.h"
+#include"leetcode119.h"
 using namespace std;
 
 
@@ -7,7 +7,7 @@ int main()
 {
 	int c = 5;
 	Solution solu;
-	solu.generate(c);
+	solu.getRow(c);
 
 }
 
