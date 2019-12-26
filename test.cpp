@@ -1,13 +1,13 @@
 #include<iostream>
-#include"leetcode122.h"
+#include"leetcode136.h"
 using namespace std;
 
 
 int main()
 {
-	vector<int> a = { 2,1,2,0,1 };
+	vector<int> a = { 2,1,2,3,1 };
 	Solution solu;
-	int c = solu.maxProfit(a);
+	int c=solu.singleNumber(a);
 	cout << c;
 }
 
