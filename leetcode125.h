@@ -19,7 +19,32 @@ public:
 
 
 	bool isPalindrome(string s) {
+		int i = 0;
+		int j = s.size() - 1;
+		while (i < j)
+		{
+			if (!isalnum(s[i]))
+			{
+				i++;
+				continue;
+			}
+			if (!isalnum(s[j]))
+			{
+				j--;
+				continue;
+			}
+			if (s[i] != s[j])
+			{
+				if (isdigit(s[i]) || isdigit(s[j]))
+					return false;
+				if (abs(s[i] - s[j]) != 32)
+					return false;
+			}
+			i++;
+			j--;
 
+		}
+		return true;
 	}
 };
 
