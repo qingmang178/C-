@@ -1,13 +1,13 @@
 #include<iostream>
-#include"leetcode136.h"
+#include"leetcode167.h"
 using namespace std;
 
 
 int main()
 {
-	vector<int> a = { 2,1,2,3,1 };
+	vector<int> a = { 2,7,11,15 };
+	int b = 9;
 	Solution solu;
-	int c=solu.singleNumber(a);
-	cout << c;
+	solu.twoSum(a, b);
 }
 
