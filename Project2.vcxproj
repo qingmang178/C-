@@ -146,6 +146,7 @@
     <ClInclude Include="leetcode14.h" />
     <ClInclude Include="leetcode141.h" />
     <ClInclude Include="leetcode142.h" />
+    <ClInclude Include="leetcode155.h" />
     <ClInclude Include="leetcode20.h" />
     <ClInclude Include="leetcode21.h" />
     <ClInclude Include="leetcode26.h" />
@@ -165,6 +166,9 @@
     <ClInclude Include="leetcode9.h" />
     <ClInclude Include="leetocde66.h" />
     <ClInclude Include="template_test.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
