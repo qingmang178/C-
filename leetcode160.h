@@ -25,7 +25,7 @@ struct ListNode {
 class Solution {
 public:
 	ListNode* getIntersectionNode(ListNode* headA, ListNode* headB) {
-		ListNode* pA = headA;
+		/*ListNode* pA = headA;
 		ListNode* pB = headB;
 		if (headA == nullptr || headB == nullptr)
 			return nullptr;
@@ -50,7 +50,24 @@ public:
 			}
 
 		}
-		return pA;
+		return pA;*/
+		if (headA == nullptr || headB == nullptr)
+			return nullptr;
+		unordered_set<ListNode*> a;
+		ListNode* pa = headA;
+		while (pa != nullptr)
+		{
+			a.insert(pa);
+			pa = pa->next;
+		}
+		ListNode* pb = headB;
+		while (pb != nullptr)
+		{
+			if (a.count(pb))
+				return pb;
+			pb = pb->next;
+		}
+		return nullptr;
 	}
 };
 
