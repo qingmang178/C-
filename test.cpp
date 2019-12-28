@@ -1,13 +1,14 @@
 #include<iostream>
-#include"leetcode167.h"
+#include"leetcode168.h"
 using namespace std;
 
 
 int main()
 {
-	vector<int> a = { 2,7,11,15 };
-	int b = 9;
+	int a = 701;
+	string str;
 	Solution solu;
-	solu.twoSum(a, b);
+	str=solu.convertToTitle(a);
+	cout << str;
 }
 
