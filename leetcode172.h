@@ -1,6 +1,6 @@
 #pragma once
-#ifndef leetcode171_
-#define leetcode171_
+#ifndef leetcode172_
+#define leetcode172_
 
 
 #include<iostream>
@@ -16,27 +16,22 @@
 using namespace std;
 
 
+
 class Solution {
 public:
-	int titleToNumber(string s) {
-		int l = s.length();
-		if (l == 0)
-			return 0;
-		int sum = 0;
-		int ans = 0;
-		for (int i = 0; i < l; i++)
+	int trailingZeroes(int n) {
+		int m = 0;
+		while (n >= 5)
 		{
-			ans = s[i] - 'A' + 1;
-			sum = sum * 26 + ans;
-			
+			m += n / 5;
+			n = n / 5;
 		}
-		return sum;
+		return m;
 	}
 };
 
 
 
 
-
-
 #endif
+
