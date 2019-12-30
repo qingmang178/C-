@@ -41,7 +41,16 @@ public:
 		int gcd_s_k = gcd(s, k);
 		for (int i = 0; i < gcd_s_k; i++)
 		{
-
+			int temp = nums[i];
+			int j = i + k;
+			while (j % s != i)
+			{
+				int temp1 = nums[j % s];
+				nums[j % s] = temp;
+				temp = temp1;
+				j += k;
+			}
+			nums[i] = temp;
 		}
 
 
