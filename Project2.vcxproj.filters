@@ -161,6 +161,9 @@
     <ClInclude Include="leetcode190.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="leetcode191.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
