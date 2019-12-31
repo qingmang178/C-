@@ -40,7 +40,6 @@ public:
 		p->next = pre;
 		return p;*/
 
-		ListNode* reverseList(ListNode * head) {
 			ListNode* pre = nullptr;
 			ListNode* p = head;
 			while (p != nullptr)
