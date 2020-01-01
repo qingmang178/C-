@@ -1,14 +1,14 @@
 #include<iostream>
-#include"leetcode168.h"
+#include"leetcode219.h"
 using namespace std;
 
 
 int main()
 {
-	int a = 701;
-	string str;
+	vector<int> b = { 1,0,1,1 };
+	int d = 1;
 	Solution solu;
-	str=solu.convertToTitle(a);
-	cout << str;
+	bool c = solu.containsNearbyDuplicate(b, d);
+	cout << c;
 }
 
