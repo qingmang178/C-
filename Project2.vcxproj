@@ -127,6 +127,8 @@
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="0000单链表.h" />
+    <ClInclude Include="0001二叉树.h" />
     <ClInclude Include="iostream_test.h" />
     <ClInclude Include="leetcod226.h" />
     <ClInclude Include="leetcode100.h" />
@@ -170,6 +172,7 @@
     <ClInclude Include="leetcode225.h" />
     <ClInclude Include="leetcode231.h" />
     <ClInclude Include="leetcode232.h" />
+    <ClInclude Include="leetcode234.h" />
     <ClInclude Include="leetcode26.h" />
     <ClInclude Include="leetcode27.h" />
     <ClInclude Include="leetcode28.h" />

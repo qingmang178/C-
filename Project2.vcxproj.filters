@@ -200,6 +200,15 @@
     <ClInclude Include="leetcode232.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="leetcode234.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="0000单链表.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="0001二叉树.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
