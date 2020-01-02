@@ -51,7 +51,8 @@ public:
 		ListNode* low = head;
 		ListNode* current = head;
 		ListNode* pre = NULL;
-		while (fast->next!= nullptr && fast->next->next != nullptr)
+
+		while (fast->next!=nullptr&&fast->next->next!=nullptr)
 		{
 			ListNode* currentnext = current->next;
 			current->next = pre;
@@ -60,15 +61,16 @@ public:
 
 			fast = fast->next->next;
 			low = low->next;
+
 		}
-		if (fast->next!= NULL)
+		if (fast->next == nullptr)
 			low = low->next;
-		while (low != nullptr)
+		while (low)
 		{
-         if (pre->val != low->val)
+			if (low->val != pre->val)
 				return false;
-		  pre = pre->next;
-		  low = low->next;
+			low = low->next;
+			pre = pre->next;
 		}
 		return true;
 	}
