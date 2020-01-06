@@ -35,6 +35,7 @@ bool wordPattern(string pattern, string str) {
 			return false;
 		else
 		{
+			////是否已经修改过，修改过就不需要再处理
 			if (mp1[pattern[i]] == NULL)
 			{
 				mp1[pattern[i]] = i + 1;
