@@ -19,11 +19,11 @@ using namespace std;
 class Solution {
 public:
 	bool isPowerOfFour(int num) {
-		if (num < 1)
+		/*if (num < 1)
 			return false;
 		while (num % 4 == 0)
 			num = num / 4;
-		return num == 1;
+		return num == 1;*/
 	}
 };
 
