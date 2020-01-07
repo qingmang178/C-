@@ -254,6 +254,12 @@
     <ClInclude Include="leetcode342.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="leetcode344.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="0000常规.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
