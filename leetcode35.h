@@ -15,22 +15,20 @@ public:
 		int len = nums.size();
 		if (len == 0)
 			return 0;
-		int i;
-		if (nums[0] < target)
-			return 0;
-		for (i = 0; i < len; i++)
+		int left = 0;
+		int right = len;
+
+		while (left < right)
 		{
-			if (nums[i] <= target)
-				continue;
-			else
-				break;
-
+			int mid = left + (right - left) / 2;
+			if (nums[mid] < target) {
+				left = mid + 1;
+			}
+			else {
+				right = mid;
+			}
 		}
-		if (nums[i-1] == target)
-			return i-1;
-		else
-			return i;
-
+		return left;
 
 	}
 };
