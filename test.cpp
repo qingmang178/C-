@@ -1,15 +1,19 @@
 #include<iostream>
-#include"leetcode299.h"
+#include"leetcode1.h"
 using namespace std;
 
 
 int main()
 {
-	string a = "1123";
-	string b = "0111";
+	vector<int> nums = { 2,7,11,15 };
+	int target = 9;
 	Solution solu;
-	string ans=solu.getHint(a, b);
-	cout << ans;
+	vector<int> ans=solu.twoSum(nums, target);
+
+	for (auto i : ans)
+	{
+		cout << i;
+	}
 
 }
 
