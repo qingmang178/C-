@@ -19,7 +19,7 @@ using namespace std;
 class Solution {
 public:
 	bool isSubsequence(string s, string t) {
-		int i = 0;
+		/*int i = 0;
 		int j = 0;
 		while (i < s.size() && j < t.size())
 		{
@@ -31,7 +31,9 @@ public:
 			else
 				j++;
 		}
-		return i == s.size();
+		return i == s.size();*/
+		vector<vector<int> > dp(26);
+
 	}
 };
 
