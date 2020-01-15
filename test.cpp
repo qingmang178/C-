@@ -1,15 +1,14 @@
 #include<iostream>
-#include"leetcode415.h"
+#include"leetcode434.h"
 using namespace std;
 
 
 int main()
 {
-	string num1 = "1357";
-	string num2 = "189";
+	string s1 = "Hello, my name is John";
 
 	Solution solu;
-	string res = solu.addStrings(num1, num2);
+	int res = solu.countSegments(s1);
 	cout << res;
 
 }
